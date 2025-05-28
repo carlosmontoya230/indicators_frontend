@@ -32,8 +32,10 @@ export default function LoginPage() {
     setError("");
     try {
       const res = await httpClient.post("/auth-sso/login", { email, password });
+      localStorage.setItem("email", res.data.user.email);
       localStorage.setItem("token", res.data.token);
-      navigate("/dashboard");
+      localStorage.setItem("roles", JSON.stringify(res.data.user.roles));
+      navigate("/home");
     } catch (err: any) {
       setError("Credenciales incorrectas");
       setEmail("");

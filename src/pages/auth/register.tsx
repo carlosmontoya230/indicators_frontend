@@ -42,7 +42,7 @@ export default function RegisterPage() {
       setTimeout(() => {
         setSuccess(false);
         navigate("/login");
-      }, 2000);
+      }, 2500);
     } catch (err: any) {
       setError(err.response.data.message);
       setEmail("");

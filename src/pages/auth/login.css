@@ -141,7 +141,26 @@
   font-weight: 600;
   font-size: 1.1rem;
   z-index: 9999;
-  animation: fadeInOut 2s;
+  animation: fadeInOutRight 4s;
+}
+
+@keyframes fadeInOutRight {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px) translateX(0);
+  }
+  10% {
+    opacity: 1;
+    transform: translateY(0) translateX(0);
+  }
+  90% {
+    opacity: 1;
+    transform: translateY(0) translateX(0);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(0) translateX(120px);
+  }
 }
 
 @keyframes fadeInOut {

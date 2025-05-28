@@ -1,0 +1,17 @@
+.home-container {
+  margin-top: 2%;
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+}
+
+.home-header {
+  background: #fff;
+  padding: 0.5rem 0.5rem;
+  border-radius: 24px;
+  box-shadow: 0 8px 32px #0002;
+  min-width: 320px;
+  text-align: center;
+  background: linear-gradient(135deg, #f5f7fa 0%, #7bd0db 100%);
+}

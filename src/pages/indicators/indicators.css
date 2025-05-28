@@ -1,0 +1,86 @@
+.indicators-container {
+  padding: 2rem;
+}
+
+.indicators-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1.5rem;
+}
+
+.indicators-title {
+  font-size: 1.5rem;
+  color: #23326b;
+  font-weight: 700;
+}
+
+.add-indicator-btn {
+  background: #4f5ba6;
+  color: #fff;
+  border: none;
+  border-radius: 50%;
+  width: 42px;
+  height: 42px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  cursor: pointer;
+  box-shadow: 0 2px 8px #0001;
+  transition: background 0.2s, transform 0.15s;
+}
+
+.add-indicator-btn:hover {
+  background: #23326b;
+  transform: scale(1.08);
+}
+
+.indicator-form {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 1.2rem 2rem;
+  width: 100%;
+}
+
+@media (max-width: 1100px) {
+  .indicator-form {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 700px) {
+  .indicator-form {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+}
+
+.indicator-form label {
+  font-weight: 600;
+  color: #23326b;
+}
+
+.indicator-form input {
+  margin-left: 0.5rem;
+  padding: 0.4rem 0.8rem;
+  border-radius: 8px;
+  border: 1px solid #b0b8c6;
+  font-size: 1rem;
+}
+
+.indicator-form button[type="submit"] {
+  background: #23326b;
+  color: #fff;
+  border: none;
+  border-radius: 12px;
+  padding: 0.5rem 1.2rem;
+  font-weight: 600;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.indicator-form button[type="submit"]:hover {
+  background: #030b41;
+}
