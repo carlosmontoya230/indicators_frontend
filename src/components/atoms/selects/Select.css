@@ -1,0 +1,118 @@
+.unix-select-container {
+  position: relative;
+  min-width: 220px;
+  max-width: 320px;
+  width: 100%;
+  font-family: inherit;
+}
+
+.unix-select-selected {
+  min-height: 40px;
+  border: 2px solid #4f5ba6;
+  border-radius: 10px;
+  padding: 0.4rem 1rem;
+  display: flex;
+  align-items: center;
+  background: #fff;
+  transition: border 0.2s, box-shadow 0.2s;
+  box-shadow: 0 2px 8px #0001;
+  font-size: 1.08rem;
+  font-weight: 500;
+  width: 250px;
+  max-width: 320px;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+.unix-select-selected.open,
+.unix-select-selected:focus-within,
+.unix-select-container:focus-within .unix-select-selected {
+  border: 2px solid #23326b;
+  box-shadow: 0 4px 16px #23326b22;
+}
+
+.unix-select-value {
+  flex: 1;
+  color: #23326b;
+  font-weight: 600;
+  letter-spacing: 0.01em;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  min-width: 0;
+}
+
+.unix-select-value.placeholder {
+  color: #b0b8c6;
+  font-weight: 400;
+}
+
+.unix-select-arrow {
+  color: #4f5ba6;
+  font-size: 1.5rem;
+  margin-left: 0.5rem;
+  transition: transform 0.2s;
+}
+
+.unix-select-selected.open .unix-select-arrow {
+  transform: rotate(-180deg);
+}
+
+.unix-select-dropdown {
+  position: fixed;
+  left: 0;
+  top: 0;
+  min-width: 220px;
+  max-width: 320px;
+  width: 100%;
+  background: #fff;
+  border: 2px solid #4f5ba6;
+  border-radius: 10px;
+  box-shadow: 0 8px 32px #0002;
+  z-index: 9999;
+  max-height: 220px;
+  overflow-y: auto;
+  animation: unixSelectIn 0.18s;
+  padding: 0.3rem 0;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+@keyframes unixSelectIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px) scale(0.98);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+.unix-select-option {
+  padding: 0.7rem 1.2rem;
+  cursor: pointer;
+  font-size: 1.07rem;
+  color: #23326b;
+  transition: background 0.15s, color 0.15s;
+  border-radius: 8px;
+  margin: 0 0.3rem;
+  margin-bottom: 2px;
+  font-weight: 500;
+}
+
+.unix-select-option.selected {
+  background: #e2e6ee;
+  color: #23326b;
+  font-weight: 700;
+}
+
+.unix-select-option:hover {
+  background: #4f5ba6;
+  color: #fff;
+}
+
+.unix-select-container.disabled {
+  opacity: 0.6;
+  pointer-events: none;
+}

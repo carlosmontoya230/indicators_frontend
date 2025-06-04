@@ -9,13 +9,52 @@ const sidebarItems = [
     label: "Inicio",
     path: "/home",
     icon: <span>🏠</span>,
+    allowedRoles: [
+      "admin",
+      "user",
+      "Verificador",
+      "Validador",
+      "Administrativo",
+      "invitado",
+      "Estandar",
+      "EstandarPlus",
+    ],
+  },
+  {
+    label: "Users",
+    path: "/adminUsers",
+    icon: <span>👪</span>,
     allowedRoles: ["admin"],
   },
   {
     label: "Indicadores",
     path: "/indicators",
     icon: <span>📊</span>,
-    allowedRoles: ["admin"],
+    allowedRoles: ["admin", "Administrativo", "Verificador"],
+  },
+  {
+    label: "Responsables",
+    path: "/responsible",
+    icon: <span>👨‍🏭</span>,
+    allowedRoles: ["admin", "Validador", "Verificador"],
+  },
+  {
+    label: "Fuente",
+    path: "/source",
+    icon: <span>🖊️</span>,
+    allowedRoles: ["admin", "Validador"],
+  },
+  {
+    label: "Resultados",
+    path: "/results",
+    icon: <span>💫</span>,
+    allowedRoles: ["admin", "Verificador"],
+  },
+  {
+    label: "Representación Visual",
+    path: "/visual-representation",
+    icon: <span>👁️</span>,
+    allowedRoles: ["admin", "Validador", "Verificador"],
   },
 ];
 

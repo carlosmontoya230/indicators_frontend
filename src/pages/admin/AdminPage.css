@@ -1,0 +1,164 @@
+.admin-container {
+  padding: 2rem;
+}
+
+.admin-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1.5rem;
+}
+
+.admin-title {
+  font-size: 1.5rem;
+  color: #23326b;
+  font-weight: 700;
+}
+
+.register-success {
+  background: #e6f9e6;
+  color: #1a7f37;
+  border: 1px solid #b6e2c6;
+  padding: 0.8rem 1.2rem;
+  border-radius: 8px;
+  margin-bottom: 1.2rem;
+  font-weight: 600;
+}
+
+.admin-table th,
+.admin-table td {
+  padding: 8px;
+}
+
+.admin-table th {
+  background: #f5f7fa;
+  color: #23326b;
+  font-weight: 700;
+  border-bottom: 2px solid #e0e4ef;
+}
+
+.admin-table tr {
+  border-bottom: 1px solid #e0e4ef;
+}
+
+.admin-table tr:last-child {
+  border-bottom: none;
+}
+
+.admin-table td {
+  background: #fff;
+}
+
+.delete-btn {
+  color: #e53935;
+  font-size: 1.2rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+  transition: color 0.2s;
+  padding: 4px 8px;
+  border-radius: 6px;
+}
+
+.delete-btn:hover {
+  background: #ffeaea;
+  color: #b71c1c;
+}
+
+.admin-modal-content {
+  padding: 2rem 1.5rem 1.5rem 1.5rem;
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 8px 32px #0002;
+  min-width: 320px;
+  text-align: center;
+}
+
+.admin-modal-title {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #e53935;
+  margin-bottom: 1rem;
+}
+
+.admin-modal-actions {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+
+.admin-modal-btn {
+  padding: 0.5rem 1.2rem;
+  border-radius: 8px;
+  border: none;
+  font-weight: 600;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s;
+}
+
+.admin-modal-btn.delete {
+  background: #e53935;
+  color: #fff;
+}
+
+.admin-modal-btn.delete:hover {
+  background: #b71c1c;
+}
+
+.admin-modal-btn.cancel {
+  background: #e0e4ef;
+  color: #23326b;
+}
+
+.admin-modal-btn.cancel:hover {
+  background: #b0b8c6;
+}
+
+.admin-form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.2rem 2rem;
+  width: 100%;
+}
+
+@media (max-width: 900px) {
+  .admin-form {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+}
+
+.admin-form label {
+  font-weight: 600;
+  color: #23326b;
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+}
+
+.admin-form input {
+  padding: 0.4rem 0.8rem;
+  border-radius: 8px;
+  border: 1px solid #b0b8c6;
+  font-size: 1rem;
+}
+
+.admin-form button[type="submit"] {
+  background: #23326b;
+  color: #fff;
+  border: none;
+  border-radius: 12px;
+  padding: 0.5rem 1.2rem;
+  font-weight: 600;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.2s;
+  grid-column: 1 / -1;
+  margin-top: 1rem;
+}
+
+.admin-form button[type="submit"]:hover {
+  background: #030b41;
+}

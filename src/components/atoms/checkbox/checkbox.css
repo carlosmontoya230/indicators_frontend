@@ -1,0 +1,46 @@
+.checkbox-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.checkbox-label {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 1rem;
+  cursor: pointer;
+  user-select: none;
+}
+
+.checkbox-root {
+  width: 22px;
+  height: 22px;
+  background: #fff;
+  border: 2px solid #4f5ba6;
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: border 0.2s, box-shadow 0.2s;
+  box-shadow: 0 2px 8px #0001;
+}
+
+.checkbox-root[data-state="checked"] {
+  background: #4f5ba6;
+  border-color: #23326b;
+}
+
+.checkbox-indicator {
+  color: #fff;
+  font-size: 1.2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.checkbox-text {
+  color: #23326b;
+  font-weight: 500;
+  letter-spacing: 0.01em;
+}
