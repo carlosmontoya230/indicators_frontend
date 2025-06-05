@@ -1,30 +1,38 @@
 import SectionTitle from "../../atoms/landing/SectionTittle";
 import TeamMemberCard from "../../molecules/landing/TeamMemberCard";
 
+// Importa todos los assets
+import softwareMedida from "../../../assets/software-medida.jpg.jpg";
+import aplicacionesMoviles from "../../../assets/tipos-de-aplicaciones-móviles.jpg";
+import automatizacion from "../../../assets/servicios.jpg";
+import oficinaAbierta from "../../../assets/oficina-abierta.jpg";
+import userCEO from "../../../assets/userCEO.jpg";
+import consultoria from "../../../assets/consultoria.jpg";
+
 const team = [
   {
     name: "Carlos Yepes",
     role: "CEO",
     email: "carlosmnontoya@Edunova ",
-    img: "/src/assets/userCEO.jpg",
+    img: userCEO,
   },
   {
     name: "Carlos Yepes",
     role: "CTO",
     email: "carlosmnontoya@Edunova",
-    img: "/src/assets/userCEO.jpg",
+    img: userCEO,
   },
   {
     name: "Carlos Yepes",
     role: "Desarrolladora Frontend",
     email: "carlosmnontoya@Edunova",
-    img: "/src/assets/userCEO.jpg",
+    img: userCEO,
   },
   {
     name: "Carlos Yepes",
     role: "Desarrollador Backend",
     email: "carlosmnontoya@Edunova",
-    img: "/src/assets/userCEO.jpg",
+    img: userCEO,
   },
 ];
 
@@ -45,11 +53,7 @@ export default function CompanySection() {
           misión es ser aliados estratégicos, aportando valor y confianza en
           cada proyecto.
         </p>
-        <img
-          src="/src/assets/Oficina-Abierta.jpg"
-          alt="Oficina"
-          className="section-img"
-        />
+        <img src={oficinaAbierta} alt="Oficina" className="section-img" />
       </section>
 
       <section id="servicios">
@@ -57,7 +61,7 @@ export default function CompanySection() {
         <div className="services-grid">
           <div className="service-card">
             <img
-              src="/src/assets/software-medida.jpg.jpg"
+              src={softwareMedida}
               alt="Software a medida"
               className="service-icon"
             />
@@ -70,7 +74,7 @@ export default function CompanySection() {
           </div>
           <div className="service-card">
             <img
-              src="/src/assets/consultoria.jpg"
+              src={consultoria}
               alt="Consultoría tecnológica"
               className="service-icon"
             />
@@ -82,7 +86,7 @@ export default function CompanySection() {
           </div>
           <div className="service-card">
             <img
-              src="/src/assets/tipos-de-aplicaciones-móviles.jpg"
+              src={aplicacionesMoviles}
               alt="Aplicaciones móviles y web"
               className="service-icon"
             />
@@ -95,7 +99,7 @@ export default function CompanySection() {
           </div>
           <div className="service-card">
             <img
-              src="/src/assets/servicios.jpg"
+              src={automatizacion}
               alt="Automatización de procesos"
               className="service-icon"
             />
