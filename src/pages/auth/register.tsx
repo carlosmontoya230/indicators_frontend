@@ -73,7 +73,14 @@ export default function RegisterPage() {
         </div>
         <div className="login-icon">
           <span
-            style={{ fontSize: 100, color: "#321152" }}
+            style={{
+              fontSize: 100,
+              color: "#321152",
+              display: "flex",
+              justifyContent: "center",
+              alignItems: "center",
+              width: "100%",
+            }}
             role="img"
             aria-label="Usuario"
           >
