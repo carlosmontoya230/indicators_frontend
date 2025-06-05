@@ -5,7 +5,7 @@ import TeamMemberCard from "../../molecules/landing/TeamMemberCard";
 import softwareMedida from "../../../assets/software-medida.jpg.jpg";
 import aplicacionesMoviles from "../../../assets/tipos-de-aplicaciones-móviles.jpg";
 import automatizacion from "../../../assets/servicios.jpg";
-import oficinaAbierta from "../../../assets/oficina-abierta.jpg";
+import oficinaAbierta from "../../../assets/Oficina-Abierta.jpg";
 import userCEO from "../../../assets/userCEO.jpg";
 import consultoria from "../../../assets/consultoria.jpg";
 
